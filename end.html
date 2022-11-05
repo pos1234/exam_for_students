@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .end{
+        text-align:left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10%;
+        height: 200px;
+        margin-top: 20%;
+    }
+    .end >:nth-child(odd){
+        padding-top:7px;
+        height: 50%;
+        margin-right:50px;
+        font-size: 17px;
+        border-right:2px solid #0E4D92;
+    }
+    .end >:nth-child(even){
+        margin-left:-10%;
+    }
+    .container h1{
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 5%;
+        color:#0E4D92;
+    }
+    h3,h2{
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+       <div class="container">
+           <h1>EXAM RESULT</h1>
+           <div class="end">
+        <span>FULL NAME</span><h3 id="name"></h3>
+        <span>CLASS SECTION</span><h3 id="sec"></h3>
+        <span>EXAM RESULT</span><h2 id="result"></h2>
+            </div>
+    </div>
+    <script src="login.js"></script>
+ <script src="question.js"></script>
+ <script src="javascript.js"></script>
+ <script src="result.js"></script>
+</body>
+</html>
