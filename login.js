@@ -6,5 +6,5 @@ submit.addEventListener('click',()=>{
     localStorage.setItem('fname',fname.value);
     localStorage.setItem('mname',mname.value);
     localStorage.setItem('section',section.value);
-    window.location.assign('/index.html');
+    window.location.assign('/quest.html');
 })

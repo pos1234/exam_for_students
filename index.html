@@ -1,51 +1,54 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin-top:20%;
+        }
+        form input[type='text']{
+            background-color:#fff;
+            border:1px solid #0E4D92;
+            height: 30px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        form select{
+            border:1px solid #0E4D92;
+            margin-top:5%;
+            height: 30px;
+            cursor: pointer;
+        }
+        button{
+            position: relative;
+            bottom:150px;
+            left:60%;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="question">
-            <h2 id="quest"></h2>
+       <div class="container">
+            <form action="">
+            First Name <input type="text" name="first_name" id="fname" required/>
+            Middle Name <input type="text" name="middle_name" id="mname" required/>    
+            Select Section<select name="section" id="section" required>
+                <option value="10A">10A</option>
+                <option value="10B">10B</option>
+                <option value="10C">10C</option>
+                <option value="10D">10D</option>
+                <option value="10E">10E</option>
+            </select>
+        </form>
         </div>
-        <div class="answers">
-            <div class="choices">
-                <div class="word">
-                    <h3>A</h3>
-                </div>
-                <div class="ans" data-number="1">
-                    
-                </div>
-            </div>
-            <div class="choices">
-                <div class="word">
-                    <h3>B</h3>
-                </div>
-                <div class="ans" data-number="2">
-                                    </div>
-            </div>
-            <div class="choices">
-                <div class="word">
-                    <h3>C</h3>
-                </div>
-                <div class="ans" data-number="3">
-                    
-                </div>
-            </div>
-            <div class="choices">
-                <div class="word">
-                    <h3>D</h3>
-                </div>
-                <div class="ans" data-number="4">
-                    
-                </div>
-            </div>
-        </div>
+        <button type="submit" name="submit" id="submit">Submit</button>
     </div>
-    <script src="question.js"></script>
-    <script src="javascript.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
