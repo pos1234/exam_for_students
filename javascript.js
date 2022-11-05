@@ -17,7 +17,7 @@ getNewQuestions();
 getNewQuestions = ()=>{
       if(availableQuestions.length==0|| questionCounter > MAX_QUESTIONS){
         localStorage.setItem('score',score);
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }  else{
     questionCounter++;
     const questionIndex = Math.floor(Math.random()*availableQuestions.length);
